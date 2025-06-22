@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush Page</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to bottom right, #ffe6f0, #e0f7fa);
+            text-align: center;
+            padding: 50px;
+            color: #444;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #ff69b4;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 20px;
+            border: 4px dashed #ffb6c1;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #ffb6c1;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Hi, crush 💖</h2>
+
+    <img src="cute.jpg" alt="Cute image" />
+    
+    <p>Nak berkawan dengan saya tak? 😳</p>
+    
+    <button id="button" onclick="buang()">Taknak 😔</button>
+    <button onclick="chatMe()">Nak 🥰</button>
+
+    <script>
+        function buang() {
+            alert('Ini haram. Terpaksa la aku buang button taknak.');
+            document.getElementById("button").remove();
+        }
+
+        function chatMe() {
+            alert('Pilihan yang tepat!');
+            window.location.href = 'https://wa.me/6282292741320?text=Hi,%20Sayang';
+        }
+    </script>
+</body>
+</html>
